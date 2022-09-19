@@ -1,0 +1,30 @@
+$primary: #C00;
+
+.App {
+  height: 100vh;
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .content {
+    height: 100%;
+
+    .sidebar {
+      width: 200px;
+
+      li {
+        padding: 5px 10px;
+        border-top: 1px solid #ccC
+      }
+    }
+
+    .tasks-content {
+      flex-grow: 1;
+    }
+  }
+}
