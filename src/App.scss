@@ -1,4 +1,5 @@
-$primary: #C00;
+$primary: #533483;
+$seconday: #E94560;
 
 .App {
   height: 100vh;
@@ -10,21 +11,41 @@ $primary: #C00;
       list-style-type: none;
     }
   }
+    
+  .header{
+    background: $seconday;
+    color: white;
+    height: 40px;
+  }
 
   .content {
-    height: 100%;
+    height: calc(100% - 40px);
 
     .sidebar {
       width: 200px;
+      background: rgba(black, .1);
 
       li {
-        padding: 5px 10px;
-        border-top: 1px solid #ccC
+          a{
+            padding: 5px 10px;
+            display: block;
+            cursor: pointer;
+            text-transform: capitalize;
+            border-bottom: 1px solid #CCC;
+            &:hover{
+              background: rgba(black, .1);
+            }
+          }
+
+        &:first-child a{
+          border-top:1px solid #CCC;
+        }
       }
     }
 
     .tasks-content {
-      flex-grow: 1;
+      padding: 20px;
+      width: calc(100% - 200px);
     }
   }
 }

@@ -17,7 +17,7 @@ function Sidebar() {
                 {
                     data && data.categories.map(ele => {
                         return (
-                            <li key={ele.id}>{ele.name}</li>
+                            <li key={ele.id}><a>{ele.name}</a></li>
                         )
                     })
                 }
