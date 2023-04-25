@@ -3,7 +3,9 @@ $seconday: #E94560;
 
 .App {
   height: 100vh;
-
+  .h-100-vh{
+    height: 100vh;
+  }
   ul {
     padding: 0;
 
@@ -17,7 +19,12 @@ $seconday: #E94560;
     color: white;
     height: 40px;
   }
-
+.login-wrapper{
+  background-color: #EFEFEF;
+  .card{
+    width: 300px;
+  }
+}
   .content {
     height: calc(100% - 40px);
 
